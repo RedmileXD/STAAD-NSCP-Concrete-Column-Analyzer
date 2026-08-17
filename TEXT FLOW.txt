@@ -1,0 +1,13 @@
+ STAAD Model (Analyzed) 
+          │
+          ▼  (Python OpenSTAAD Extract Loop)
+  P_u, M_ux, M_uz  (Forces collected per member)
+          │
+          ▼  (Pandas Manipulation)
+  Find absolute WORST case per column across all load combinations
+          │
+          ▼  (Openpyxl Matrix Writer)
+  Excel Dashboard with conditional formatting (Pass/Fail Red/Green highlighting)
+
+DONT FORGET TO MODIFY CONFIG.JSON
+COPY RESULTS FROM ENV ONLY
