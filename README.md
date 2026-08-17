@@ -1,4 +1,4 @@
-# 🏛️ Automated NSCP 2015 Column Demand vs. Capacity (D/C) Analyzer for STAAD.Pro
+# Automated NSCP 2015 Column Demand vs. Capacity (D/C) Analyzer for STAAD.Pro
 
 A robust, data-driven post-processing pipeline designed to automate structural compliance audits for concrete buildings. This tool connects to **STAAD.Pro CONNECT Edition** via a hybrid architecture (Local Disk Data Parsing + Windows COM Layer Clipboard Overrides), completely bypassing broken or cracked software type-library limitations (`'int' object is not callable` errors).
 
@@ -6,7 +6,7 @@ The engine parses the raw structure, dynamically calculates the ultimate factore
 
 ---
 
-## ⚡ Key Engineering Automation Features
+## Key Engineering Automation Features
 
 - **Automated Geometric Member ID Classification:** Bypasses unstable GUI selection buffers by opening the `.std` file directly on the disk. It screens coordinates to isolate perfectly vertical structural frames (parallel to the Global Y-axis).
 - **Multi-Profile Dynamic Grouping:** Automatically reads the `MEMBER PROPERTY` text blocks, isolates unique section dimensions (e.g., \(300\times300\text{ mm}\) vs. \(400\times300\text{ mm}\)), and writes them natively into a structured layout layer (`config.json`).
@@ -16,7 +16,7 @@ The engine parses the raw structure, dynamically calculates the ultimate factore
 
 ---
 
-## 🚀 Step-by-Step Execution Guide
+## Step-by-Step Execution Guide
 
 ### 1. Workstation Initialization
 Clone this repository to your machine, open a Command Prompt inside the directory path, and execute the universal package alignment launcher:
@@ -41,7 +41,7 @@ py column_extractor.py
 
 ---
 
-## 📊 Sample Production Output Dashboard
+## Sample Production Output Dashboard
 
 The script compiles the nested data arrays and updates a beautifully formatted spreadsheet report file named `Column_DC_Dashboard.xlsx` in your folder. The terminal will output a sorted data matrix stream:
 
